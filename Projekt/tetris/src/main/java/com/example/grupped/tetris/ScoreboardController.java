@@ -10,9 +10,10 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ScoreboardController {
     private static final String template = "%s";
     private final AtomicLong counter = new AtomicLong();
+    private static final Number number = 0;
 
     @GetMapping("/scoreboard")
     public Scoreboard scoreboard(@RequestParam(value = "username", defaultValue = "Til") String name) {
-        return new Scoreboard(counter.incrementAndGet(), String.format(template,name));
+        return new Scoreboard(counter.incrementAndGet(), String.format(template,name), number.intValue());
     }
 }
