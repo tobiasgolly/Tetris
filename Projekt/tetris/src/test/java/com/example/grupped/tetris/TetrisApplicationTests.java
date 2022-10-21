@@ -1,4 +1,4 @@
-package com.grupped.tetris;
+package com.example.grupped.tetris;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
