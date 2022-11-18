@@ -2,6 +2,7 @@ package com.example.grupped.tetris;
 
 import java.time.LocalDateTime;
 
+@Entity
 public class Score {
 
     public Score() {}
